@@ -16,7 +16,7 @@ repositories {
 }
 
 base {
-    archivesName = mod_id
+    archivesName = "five-hour-energy"
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
