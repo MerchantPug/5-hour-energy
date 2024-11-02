@@ -1,0 +1,9 @@
+{
+  "block.fivehourenergy.five_hour_energy": "Five Hour Energy",
+  "item.fivehourenergy.five_hour_energy_bucket": "Five Hour Energy Bucket",
+  "effect.fivehourenergy.five_hour_energy": "Five Hour Energy",
+  "block.fivehourenergy.five_hour_sleep": "Five Hour Sleep",
+  "item.fivehourenergy.five_hour_sleep_bucket": "Five Hour Sleep Bucket",
+  "effect.fivehourenergy.five_hour_sleep": "Five Hour Sleep",
+  "sleep.fivehourenergy.cancelled_out_energy": "You slept for five hours! Your five hour energy has been cancelled out!"
+}

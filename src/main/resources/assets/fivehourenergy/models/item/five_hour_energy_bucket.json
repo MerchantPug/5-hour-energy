@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fivehourenergy:item/five_hour_energy_bucket"
+  }
+}
