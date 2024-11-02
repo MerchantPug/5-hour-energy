@@ -1,0 +1,11 @@
+{
+  "type": "legacy_landscape:void",
+  "group": "",
+  "ingredient": {
+    "item": "fivehourenergy:five_hour_energy_bucket"
+  },
+  "result": {
+    "count": 1,
+    "id": "fivehourenergy:five_hour_sleep_bucket"
+  }
+}
