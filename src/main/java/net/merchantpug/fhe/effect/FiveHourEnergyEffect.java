@@ -1,11 +1,15 @@
 package net.merchantpug.fhe.effect;
 
+import net.minecraft.core.Holder;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.neoforged.neoforge.common.EffectCure;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class FiveHourEnergyEffect extends MobEffect {
@@ -20,7 +24,14 @@ public class FiveHourEnergyEffect extends MobEffect {
 
     @Override
     public void onEffectStarted(LivingEntity living, int amplifier) {
-        living.removeEffectsCuredBy(cure);
+        List<MobEffectInstance> instances = new ArrayList<>(living.getActiveEffects());
+        if (instances.stream().anyMatch(mobEffectInstance -> mobEffectInstance.getCures().contains(cure))) {
+            for (Holder<MobEffect> holder : instances.stream().map(MobEffectInstance::getEffect).toList()) {
+                if (holder.value() == this)
+                    living.removeEffect(holder);
+            }
+            living.removeEffectsCuredBy(cure);
+        }
     }
 
     @Override
