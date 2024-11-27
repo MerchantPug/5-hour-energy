@@ -9,9 +9,10 @@ version="${mod_version}"
 displayName="${mod_name}"
 displayURL="https://5hourenergy.com/"
 logoFile="fivehourenergy.png"
+logoBlur=false
 credits="5 Hour Energy"
 authors="MerchantPug"
-description='''It's not a drink, it's a drink.'''
+description='''It's not a drink, more like a drink.'''
 
 [[mixins]]
 config="${mod_id}.mixins.json"
